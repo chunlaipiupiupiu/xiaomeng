@@ -1,0 +1,32 @@
+.container {
+  height: 50rpx;
+}
+
+.container image {
+  width: 45rpx;
+  height: 45rpx;
+  right: 30rpx;
+  position: absolute;
+}
+
+.moreul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 80rpx;
+  right: 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.moreadd view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180rpx;
+  background-color: #fff;
+  height: 60rpx;
+  font-size: 14px;
+}
+

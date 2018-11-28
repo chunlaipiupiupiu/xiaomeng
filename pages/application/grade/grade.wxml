@@ -1,0 +1,34 @@
+<header />
+<view class='container'>
+  <picker mode="selector" value="{{index}}" range="{{semester}}" bindchange="semesterchange">
+    <view class='choosesemester'>
+      <text>第{{semester[index]}}学期</text>
+      <image class='chose-icon' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/chose.png'></image>
+    </view>
+  </picker>
+  <view class="project">
+    <text class='projectname'>学科</text>
+    <text class="projectcredicts">学分</text>
+    <text class="gradepoint">绩点</text>
+    <text class="projectgrade">成绩</text>
+  </view>
+  <view class="grades" wx:for="{{grades}}" wx:key="{{item}}">
+    <view class="project">
+      <text class='projectname'>{{item.courseName}}</text>
+      <text class="projectcredicts">{{item.credit}}</text>
+      <text class="gradepoint">{{item.coursePoint}}</text>
+      <text class="projectgrade">{{item.courseGrade}}</text>
+    </view>
+  </view>
+  <!--更多信息，如平均分，平均绩点，总学分，等等-->
+  <view class="more">
+    <view class="average">
+      <text>平均成绩：</text>
+      <text>{{average}}</text>
+    </view>
+    <view class="average">
+      <text>平均绩点：</text>
+      <text>{{pointaverage}}</text>
+    </view>
+  </view>
+</view>

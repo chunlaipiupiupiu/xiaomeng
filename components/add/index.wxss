@@ -1,0 +1,16 @@
+.container {
+  width: 90rpx;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  opacity: 0.5;
+  border-radius: 8rpx;
+}
+
+.container image {
+  width: 100rpx;
+  height: 100rpx;
+}

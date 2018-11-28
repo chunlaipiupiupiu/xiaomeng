@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.topbgd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.topbgd image {
+  width: 100%;
+  height: 303rpx;
+}
+
+.avatar-border {
+  width: 203rpx;
+  height: 203rpx;
+  margin-top: 221rpx;
+  z-index: 3;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+}
+
+open-data {
+  overflow: hidden;
+  display: block;
+}
+
+.foot {
+  position: relative;
+  left: 300rpx;
+  width: 52rpx;
+  height: 83rpx;
+  /* margin-bottom: 30rpx; */
+}
+
+.foot image {
+  width: 100%;
+  height: 100%;
+}
+
+.inform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inform view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.inform text {
+  font-size: 15px;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+}
+
+.info {
+  width: 438rpx;
+  background: #d8d8d8;
+  padding: 10rpx;
+  border-radius: 15rpx;
+}
+
+.topbgd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+}
+
+.footbgd {
+  /* position: absolute; */
+  position: relative;
+  bottom: 0;
+  margin-top: 150rpx;
+}
+
+.footbgd image {
+  width: 749rpx;
+  height: 179rpx;
+}
+
+/* 
+.changeaccount{
+  margin-top: 50rpx;
+  background-color: rgba(255, 51, 0, 1);
+  color: #FFF;
+} */

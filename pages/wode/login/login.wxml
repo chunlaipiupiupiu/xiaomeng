@@ -1,0 +1,28 @@
+<header />
+<view class="container">
+  <view class="header">
+    <image src="https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/biguser.png"></image>
+    <text>用户登陆</text>
+  </view>
+  <view class="login">
+    <form bindsubmit="formSubmit">
+      <view class="username">
+        <label>用户名 </label>
+        <input class="inputname" name="username" type='number' placeholder='请输入一卡通号'></input>
+      </view>
+      <view class="password login-input">
+        <label>密码</label>
+        <input class="inputpwd" name="password" type='password' placeholder='请输入教务系统密码'> </input>
+      </view>
+      <!-- <view class="verify">
+        <label>验证码</label>
+        <input class='inputverify' name="verify" type='password' placeholder='请输入验证码' ></input>
+        <image src='http://jw.jxust.edu.cn/verifycode.servlet' catchtap='changeverifycode'></image>
+      </view> -->
+      <view class="forgetpwd" bindtap='forgetpwd'>
+          <text>忘记密码</text>
+      </view>
+      <button class="submit" formType="submit">登陆</button>
+    </form>
+  </view>
+</view>

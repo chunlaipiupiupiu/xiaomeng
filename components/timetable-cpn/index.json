@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "heading": "/components/heading/index",
+    "add": "/components/add/index"
+  }
+}

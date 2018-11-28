@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/timetable/timetable",
+    "pages/application/application",
+    "pages/application/grade/grade",
+    "pages/application/map/map",
+    "pages/wode/wode",
+    "pages/wode/system/system",
+    "pages/wode/reset/reset",
+    "pages/wode/manual/manual",
+    "pages/wode/logined/logined",
+    "pages/wode/login/login",
+    "pages/wode/join/join",    
+    "pages/wode/aboutus/aboutus",
+    "pages/wode/changepwd/changepwd"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/timetable/timetable",
+        "text": "课表",
+        "iconPath": "icon/kebiao.png",
+        "selectedIconPath": "icon/kebiao-hl.png"
+      },
+      {
+        "pagePath": "pages/application/application",
+        "text": "功能",
+        "iconPath": "icon/application.png",
+        "selectedIconPath": "icon/application-hl.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "icon/wode.png",
+        "selectedIconPath": "icon/wode-hl.png"
+      }
+    ]
+  }
+}

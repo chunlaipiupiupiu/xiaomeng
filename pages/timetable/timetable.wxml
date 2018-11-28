@@ -1,0 +1,6 @@
+<view>
+  <header class="header" bind:moreCourse="{{morecourse}}" isIndex="{{isIndex}}" />
+  <image class='bgd' lazy-load='true' src='{{backgroundImage}}' mode='center'></image>  <timetable-cpn week_index="{{week_index}}" week_num="{{week_num}}" bind:morecourse="morecourse" bind:addcourse="addcourse" bind:refresh="refresh" bind:weekChange="weekChange"/>
+  <morecourse morecourse="{{morecourse}}" bind:refresh="refresh" />
+  <addcourse addcourse="{{addcourse}}" model="{{model}}" addday="{{addday}}" bind:refresh="refresh" />
+</view>ghh

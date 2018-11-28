@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "树小萌助手",
+  "component": true,
+  "usingComponents": {
+    "timetable-cpn": "/components/timetable-cpn/index",
+    "header": "/components/topBar/index",
+    "morecourse": "/components/morecourse/index",
+    "addcourse": "/components/addcourse/index"
+  },
+  "enablePullDownRefresh": true
+}

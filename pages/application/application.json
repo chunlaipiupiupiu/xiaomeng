@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "树小萌助手",
+  "component": true,
+  "usingComponents": {
+    "header": "/components/topBar/index"
+  }
+}

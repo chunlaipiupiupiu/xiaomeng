@@ -1,0 +1,5 @@
+<view class='container' bind:longpress="add" style="margin-left:{{(addday-1)*100+6}}rpx;margin-top:{{(addcourse-1)*200+10}}rpx;">
+  <view class="item">
+    <image src="https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/sum.png"></image>
+  </view>
+</view>

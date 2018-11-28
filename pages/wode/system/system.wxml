@@ -1,0 +1,29 @@
+<header />
+<view class="container">
+  <view class="content">
+    <view class="syslist">
+      <view class="bgbtn" catchtap='changeBackground'>
+        <text>更换课表背景图</text>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/rightgray.png'></image>
+      </view>
+      <view class="storbtn" catchtap="clearBackground">
+        <text>恢复默认背景图</text>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/rightgray.png'></image>
+      </view>
+    </view>
+    <view class="theblank"></view>
+    <view class="storagebtn" catchtap='clearStorage'>
+      <text>清空本地缓存</text>
+      <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/rightgray.png'></image>
+    </view>
+    <!-- <view class="theblank"></view> -->
+    <!-- <form class='bgdcolor' bindsubmit='submit'>
+      <text>请输入背景颜色</text>
+      <input name="bgd" style=' background-color: rgb(245, 245, 245);' />
+      <button form-type='submit'>修改</button>
+    </form> -->
+  </view>
+  <!-- <text class='tips'>
+    请输入十六进制颜色码：如#000000
+  </text> -->
+</view>

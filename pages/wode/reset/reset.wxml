@@ -1,0 +1,22 @@
+<header />
+<view class="container">
+  <view class="header">
+    <image src="https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/resetpwd.png"></image>
+    <text>忘记密码</text>
+  </view>
+  <view class="reset">
+    <form bindsubmit="formReset">
+      <view class="username">
+        <label>用户名 </label>
+        <input class="inputname" name="username" type='number' placeholder='请输入一卡通号'></input>
+      </view>
+      <view class="password login-input">
+        <label>身份证号</label>
+        <input class='inputidentify' name="identify" type='idcard' placeholder='请输入身份证号'></input>
+      </view>
+      <view class="identify">
+      </view>
+      <button class="submit" formType="submit">重置密码</button>
+    </form>
+  </view>
+</view>

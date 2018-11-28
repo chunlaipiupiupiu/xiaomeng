@@ -1,0 +1,26 @@
+<view class="container">
+  <heading week_index="{{week_index}}" class="header" bind:bindweekchange="bindweekchange" bind:morecourse="morecourse" bind:refresh="refresh" />
+  <view class='top'>
+    <view wx:for="{{day_num}}" wx:key="item">
+      <text>  周{{item}}</text>
+    </view>
+  </view>
+  <view class='content' bindtap='add'>
+    <view class='left'>
+      <view wx:for="{{chose_num}}" wx:key="item">
+        <text> {{item}}</text>
+      </view>
+    </view>
+    <!--课表内容开始-->
+    <view class='right'>
+      <!--添加的加号-->
+      <add wx:if="{{add}}" y="{{y}}" x="{{x}}" bind:addcourse="model" bind:refresh="refresh" />
+      <view wx:for="{{week_num}}" wx:key="item" bindlongpress='delete' style="margin-left:{{item.whichDay*100}}rpx;margin-top:{{(item.whichCourse-1)*200}}rpx;">
+        <view class="item">
+          <text style="background:#66ccff;">{{item.courseName+item.courseWeek+item.courseAddress}}</text>
+        </view>
+      </view>
+      <!--课表内容结束-->
+    </view>
+  </view>
+</view>

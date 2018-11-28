@@ -1,0 +1,12 @@
+<view class='container' style="background-color:{{Color}}">
+  <picker value="{{week_index}}" range='{{week}}' bind:change="bindWeekChange">
+    <view class='pick'>
+      <view class="chose-week">第{{week_index+1}}周</view>
+      <view class='chose-icon'>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/chose.png'></image>
+      </view>
+    </view>
+  </picker>
+  <!--第一个bind是用来监视子组件，第二个bind用来传递数据-->
+  <more bind:morecourse="morecourse" bind:refresh="refresh" />
+</view>

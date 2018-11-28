@@ -1,0 +1,23 @@
+<view class='container_add' wx:if="{{model==true}}" style='top=128px!important;'>
+  <form class="addcourse" bindsubmit='addcheck' bindreset='cancel'>
+    <view>
+      <label>课程</label>
+      <input class="inputed" name="coursename" type='text' placeholder='请输入课程名称'> </input>
+    </view>
+    <view>
+      <label>地点</label>
+      <input class="inputed" name="courseaddress" type='text' placeholder='请输入课程地点'> </input>
+    </view>
+    <view>
+      <label>周数</label>
+      <scroll-view class="check" scroll-x='true' style='display:flex;flex-direction:row;'>
+        <checkbox-group class="checkboxs" name="checkboxs">
+          <checkbox wx:for="{{week}}" style="transform:scale(.6)" wx:key="item" value='{{item}}' checked='{{item.checked}}'>{{item}}</checkbox>
+        </checkbox-group>
+      </scroll-view>
+    </view>
+    <view class="">周{{day_num[addday-1]}}第{{day_num[addcourse]}}大节</view>
+    <button form-type='submit'>提交</button>
+    <button form-type='reset'>取消</button>
+  </form>
+</view>

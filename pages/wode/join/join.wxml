@@ -1,0 +1,109 @@
+<header />
+<view class='container'>
+  <view class="header">
+    <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/join-us.jpg' lazy-load='true'></image>
+    <view class="joinus">
+      <text id="site-title">Join in us</text>
+    </view>
+  </view>
+  <!-- 办公室 -->
+  <view class="officer department">
+    <view class="title">
+      <view class="line"></view>
+      <view>
+        <text>办公室</text>
+      </view>
+      <view class="line"></view>
+    </view>
+    <view class="content">
+      <text><text class='word-color'>办公室</text>主要负责树人网工作室内的日常工作以及校园和部门的活动策划，例如事例通知、课表统计、活动期间的人员安排等，同时还负责树人网与其他组织的沟通联系。</text>
+    </view>
+  </view>
+  <!-- 编辑部 -->
+  <view class="editer department">
+    <view class="title">
+      <view class="line"></view>
+      <view>
+        <text>编辑部</text>
+      </view>
+      <view class="line"></view>
+    </view>
+    <view class="content">
+      <text><text class='word-color'>编辑部</text>主要负责树人网网站栏目内容的整合、采集和更新，树小萌三大新媒体平台（QQ、微信、微博）的策划运营。</text>
+    </view>
+  </view>
+  <!-- 技术部 -->
+  <view class='coder department'>
+    <view class="title">
+      <view class="line"></view>
+      <view>
+        <text>技术部</text>
+      </view>
+      <view class="line"></view>
+    </view>
+    <view class="content">
+      <text><text class='word-color'>技术部</text>为分为美工组和代码组，主要维护树人网网站的运行，活动海报制作、专题网页制作、开发APP、制作微信小程序等等。如果你熟悉PS、AU、PR等软件，如果你是web端爱好者，那么欢迎你的加入。</text>
+    </view>
+  </view>
+  <!-- 加入我们 -->
+  <view class='join department'>
+    <view class="title">
+      <view class="line"></view>
+      <view>
+        <text>加入我们</text>
+      </view>
+      <view class="line"></view>
+    </view>
+    <!-- 表单组件开始 -->
+    <form name="join" bindsubmit='formSubmit'>
+      <!-- 基本信息 -->
+      <view class='form-title'>基本信息</view>
+      <view class="section">
+        <label>姓名</label>
+        <input name="name" placeholder="请输入姓名" placeholder-class="input-placeholder" />
+      </view>
+      <view class="section">
+        <label>学院</label>
+        <input name="school" placeholder="请输入学院" placeholder-class="input-placeholder" />
+      </view>
+      <view class="section">
+        <label>专业</label>
+        <input name="profession" placeholder="请输入专业班级" placeholder-class="input-placeholder" />
+      </view>
+      <!-- 意向部门 -->
+      <view class='form-title'>意向部门</view>
+      <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="department">
+          <view class="picker">
+            部门
+            <text class="picker-text">{{array[index]}}</text>
+          </view>
+        </picker>
+      </view>
+      <!-- 爱好和特长 -->
+      <view class='form-title'>兴趣爱好</view>
+      <view class="section-text">
+        <textarea name="interest" placeholder-class="txtarea"  placeholder="你的兴趣爱好特长等" cursor-spacing='140' />
+      </view>
+      <!-- 相关经历 -->
+      <view class='form-title'>个人经历</view>
+      <view class="section-text">
+        <textarea name="exp"  placeholder-class="txtarea" placeholder="过去与意向部门工作或学习的相关经历" cursor-spacing='140' />
+      </view>
+      <!-- 联系方式 -->
+      <view class='form-title'>联系方式</view>
+      <view class="section">
+        <label>电话</label>
+        <input name="mobile" placeholder="请输入你的手机号" placeholder-class="input-placeholder" maxlength="11" type="number" />
+      </view>
+      <view class="section">
+        <label>QQ</label>
+        <input name="QQ" placeholder="请输入你的QQ号" placeholder-class="input-placeholder" maxlength="15" type="number" />
+      </view>
+      <view class='tips'>
+        <text>请输入正确的QQ号哟，要不然回复就会发送到别人邮箱啦</text>
+      </view>
+      <button class='signup' formType='submit'>报名</button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<header />
+<view class="container">
+  <view class="header">
+    <image src="https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/biguser.png"></image>
+    <text>修改密码</text>
+  </view>
+  <view class="login">
+    <form bindsubmit="formSubmit">
+      <view class="username">
+        <label>旧密码 </label>
+        <input class="inputname" name="oldpwd" type='password' placeholder='请输入原密码'></input>
+      </view>
+      <view class="password login-input">
+        <label>新密码</label>
+        <input class="inputpwd" name="newpwd" type='password' placeholder='请输入新密码'> </input>
+      </view>
+      <view class="password login-input">
+        <label>确认密码</label>
+        <input class="inputpwd" name="confirmpwd" type='password' placeholder='请输入确认密码'> </input>
+      </view>
+      <label class="tips">密码至少8位且必须包含数字、字母</label>
+      <view class='information'>
+        <label wx:if="{{status==1}}">新密码和原密码一致</label>
+        <label wx:if="{{status==2}}">新密码与确认密码输入不一致</label>
+        <label wx:if="{{status==3}}">密码长度应在8-28位之间</label>
+        <label wx:if="{{status==4}}">密码必须包含数字、字母</label>
+        <label wx:if="{{status==5}}">输入不能为空</label>
+        <label wx:if="{{status==6}}">密码不能有中文</label>
+      </view>
+      <button class="submit" formType="submit" disabled='{{able}}'>修改密码</button>
+    </form>
+  </view>
+</view>

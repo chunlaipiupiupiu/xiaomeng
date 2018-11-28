@@ -1,0 +1,36 @@
+<view class='container' wx:if="{{morecourse==true}}">
+  <form class="morecourse" bindsubmit='addcheck' bindreset='cancel'>
+    <view>
+      <label>课程</label>
+      <input class="inputed" name="coursename" type='text' placeholder='请输入课程名称'> </input>
+    </view>
+    <view>
+      <label>地点</label>
+      <input class="inputed" name="courseaddress" type='text' placeholder='请输入课程地点'> </input>
+    </view>
+    <view>
+      <label>周数</label>
+      <scroll-view class="check" scroll-x='true' style='display:flex;flex-direction:row;'>
+        <checkbox-group class="checkboxs" name="checkboxs">
+          <checkbox wx:for="{{week}}" style="transform:scale(.6)" wx:key="item" value='{{item}}' checked='{{item.checked}}'>{{item}}</checkbox>
+        </checkbox-group>
+      </scroll-view>
+    </view>
+    <view>
+      <picker name="dayindex" value="{{index}}" range='{{day_num}}' bindchange="moreWeekChange1">
+        <view class="infopick">
+          <view class="chose-week">星期{{day_num[dayindex]}}</view>
+          <image class='chose-icon' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/chose.png'></image>
+        </view>
+      </picker>
+      <picker name="courseindex" value="{{index}}" range='{{[1,2,3,4,5]}}' bindchange="moreWeekChange2">
+        <view class="infopick">
+          <view class="chose-week">第{{chose_num[courseindex]}}节课</view>
+          <image class='chose-icon' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/chose.png'></image>
+        </view>
+      </picker>
+    </view>
+    <button form-type='submit'>提交</button>
+    <button form-type='reset'>取消</button>
+  </form>
+</view>

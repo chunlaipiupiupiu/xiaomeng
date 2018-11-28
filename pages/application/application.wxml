@@ -1,0 +1,39 @@
+<header  isIndex="{{isIndex}}"/>
+<view class='container'>
+  <swiper catchtap='onSwiperTap' autoplay='true' interval='5000' indicator-dots='true' circular='true'>
+    <swiper-item>
+      <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/swiper_2.jpg' lazy-load='true'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/swiper_3.jpg' lazy-load='true'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/swiper_1.jpg' lazy-load='true'></image>
+    </swiper-item>
+  </swiper>
+  <view class='message' style='display:{{display}}'>
+    <image class='horn' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/horn.gif'></image>
+    <text class='message-content'>更多功能仍在开发中，如有问题私聊小萌哦~</text>
+    <!-- <image class='cancel' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/cancel.png' bindtap="hideview"></image> -->
+  </view>
+  <view class='menu'>
+    <view class='grade sub-menu' bindtap="grade">
+      <view class='icon-wrap'>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/grade.png'></image>
+      </view>
+      <text>查成绩</text>
+    </view>
+    <view class='map sub-menu' bindtap='map'>
+      <view class='icon-wrap'>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/location.png'></image>
+      </view>
+      <text>校园地图</text>
+    </view>
+    <view class='developing sub-menu'>
+      <view class='icon-wrap'>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/developing.png'></image>
+      </view>
+      <text>敬请期待</text>
+    </view>
+  </view>
+</view>

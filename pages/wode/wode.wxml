@@ -1,0 +1,50 @@
+<header isIndex="{{isIndex}}" />
+<view class='container'>
+  <view class='header'>
+    <image class='bg' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/bg.png' lazy-load='true'></image>
+    <!-- <image class='avatar' src='/images/avatar.png'></image> -->
+    <view class='avatar-border'>
+      <open-data type="userAvatarUrl" class='avatar'></open-data>
+    </view>
+    <!--圆形微信图标-->
+    <open-data type="userNickName" lang="zh_CN" class='username'></open-data>
+    <view class='header-item'>
+      <view class='header-item-about' bindtap="aboutus">
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/about.png'></image>
+        <text>关于我们</text>
+      </view>
+      <view class='header-item-right'>
+        <view>1.0.2</view>
+        <text>当前版本</text>
+      </view>
+    </view>
+  </view>
+  <!--列表内容-->
+  <view class='content'>
+    <view class='content-item content-top'>
+      <view class='button' bindtap='authentication'>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/student-id.png'></image>
+        <text>身份绑定</text>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/right.png'></image>
+      </view>
+      <view class='button' bindtap="settings">
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/settings.png'></image>
+        <text>系统设置</text>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/right.png'></image>
+      </view>
+    </view>
+    <view class='content-item content-center'>
+      <view class='button' bindtap='joinus'>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/join-us.png'></image>
+        <text>加入我们</text>
+        <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/right.png'></image>
+      </view>
+      <view class='share'>
+        <button class='button share' open-type="share">
+          <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/srw-nice.png'></image>
+          <text>推荐给同学</text>
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

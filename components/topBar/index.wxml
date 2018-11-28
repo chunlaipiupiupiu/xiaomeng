@@ -1,0 +1,6 @@
+<view class="container" style='background-color:{{Color}};height:{{Top+Height}}px'>
+  <view class='bar' style='padding-top:{{Top}}px;height:{{Height}}px;background-color:{{Color}}'>
+    <image src="https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/left.png" bindtap="isIndex" wx:if="{{isIndex}}"/>
+    <text>树小萌助手</text>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#66ccff",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "树小萌助手",
+  "navigationStyle": "default",
+    "usingComponents": {
+      "header": "/components/topBar/index"
+    }
+}

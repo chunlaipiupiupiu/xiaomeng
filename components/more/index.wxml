@@ -1,0 +1,14 @@
+<view class="container" bindtap='more'>
+  <image src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/more.png' />
+  <view class='moreul' wx:if="{{moreul}}">
+    <view class="moreadd">
+      <view class='update' bindtap='update'>
+        <text>更新课表</text>
+      </view>
+      <view class='morecourse' bindtap='morecourse'>
+        <text>添加课程</text>
+      </view>
+    </view>
+  </view>
+  <!-- 添加课程 -->
+</view>

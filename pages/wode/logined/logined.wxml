@@ -1,0 +1,43 @@
+<header />
+<view class="container">
+  <!-- 获取微信头像的图标 -->
+  <view class="topbgd">
+    <image src='/images/loginedbgd.png'></image>
+  </view>
+  <view class='avatar-border'>
+    <open-data type="userAvatarUrl" class='avatar'></open-data>
+  </view>
+  <view class='foot'>
+    <image src='/images/foot.png'></image>
+  </view>
+  <view class="inform">
+    <view class='tag'>
+      <image class='icon' src='/images/icon/name.png'></image>
+      <text class="info"><text>姓名：</text>{{info.name}}</text>
+    </view>
+    <view class='account'>
+      <image class='icon' src='/images/icon/account.png'></image>
+      <text class="info"><text>学号：</text>{{info.studentID}}
+      </text>
+    </view>
+    <view class='faculty'>
+      <image class='icon' src='/images/icon/school.png'></image>
+      <text class="info"> <text>学院：</text>{{info.school}}</text>
+    </view>
+    <view class='profession'>
+      <image class='icon' src='/images/icon/profession.png'></image>
+      <text class="info">  <text>专业：</text>{{info.profession}}</text>
+    </view>
+    <view class='class'>
+      <image class='icon' src='/images/icon/classes2.png'></image>
+      <text class="info"><text>班级：</text>{{info.class}}</text>
+    </view>
+  </view>
+  <view class="buttons">
+    <button class="changeaccount" bindtap='changeaccount'>切换账号</button>
+    <!-- <button class="changepwd" bindtap='changepwd'>更改密码</button>   -->
+  </view>
+  <view class="footbgd">
+    <image src='/images/footbgd.png'></image>
+  </view>
+</view>

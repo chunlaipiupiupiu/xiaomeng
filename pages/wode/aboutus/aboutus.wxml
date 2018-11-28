@@ -1,0 +1,18 @@
+<header />
+<view class='container'>
+  <image class='aboutus-bg' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/aboutus-bg.jpg' lazy-load='true'></image>
+  <view class='avatar-wrap'>
+    <image class='avatar' src='https://lg-n8uihw4i-1253681281.cos.ap-shanghai.myqcloud.com/avatar.png' lazy-load='true'></image>
+  </view>
+  <view class='copyright'>
+    <text>Created By 春来 功任  /  设计 刘文静</text>
+  </view>
+  <view class='footer-wrap'>
+    <view class='footer'>
+      <text>关注微信公众号</text>
+      <text class='footer-srw'>江西理工大学树人网</text>
+      <text class='footer-border'>▇   树人网是校党委宣传部直辖的综合性校园门户网站</text>
+      <text>▇   工作室设有办公室、编辑部、美工组、代码组，树人网欢迎各位的加入</text>
+    </view>
+  </view>
+</view>

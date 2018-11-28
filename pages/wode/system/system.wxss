@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+  font-size: 14px;
+}
+
+.content {
+  width: 100%;
+  margin-top: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.content image {
+  align-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin-top: 10rpx;
+  right: 20rpx;
+}
+
+.content text {
+  font-size: 16px;
+  color: #000;
+  margin-left: 50rpx;
+  align-items: flex-start;
+}
+
+/*系统设置列表开始*/
+
+.syslist {
+  width: 90%;
+  height: 100%;
+}
+
+.syslist view {
+  border-bottom: 1px solid rgb(245, 245, 245);
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+
+/*空白*/
+
+.theblank {
+  width: 100%;
+  height: 30rpx;
+  background-color: rgb(245, 245, 245);
+}
+
+.storagebtn {
+  width: 90%;
+  height: 100%;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+/*更改配色*/
+
+.bgdcolor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+
+.bgdcolor text {
+  float: left;
+}
+
+.bgdcolor input {
+  float: left;
+}
+
+.bgdcolor button {
+  font-size: 12px;
+  width: 100rpx;
+  height: 50rpx;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 100rpx;
+  background: #fff;
+  color: #6cf;
+}

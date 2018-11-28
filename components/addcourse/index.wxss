@@ -1,0 +1,46 @@
+.container_add {
+  width: 100%;
+  position: absolute;
+  top: 103px! important;
+  background: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 9;
+}
+
+.addcourse {
+  width: 100%;
+  height: 100%;
+}
+
+.addcourse view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30rpx;
+  flex-wrap: wrap;
+}
+
+.addcourse image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.checkboxs {
+  display: flex;
+  flex-direction: row;
+}
+
+.infopick view {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.addcourse button {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}

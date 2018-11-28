@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  background: #fff;
+}
+
+.container text {
+  font-size: 14px;
+}
+
+.choosesemester {
+  width: 750rpx;
+  background: #6cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choosesemester text {
+  margin-left: 70rpx;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.container>.project {
+  background: #6cf;
+}
+
+.container>.project text {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.chose-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projectname {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grades {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20rpx;
+  flex-wrap: wrap;
+}
+
+/*更多*/
+.more{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.more text{
+  color:#11449e;
+}

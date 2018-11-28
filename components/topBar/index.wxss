@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+
+.bar {
+  position: fixed;  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  z-index: 10;  
+}
+
+.bar image{
+  position: fixed;
+  left: 30rpx;
+  width:45rpx;
+  height:45rpx;
+}
